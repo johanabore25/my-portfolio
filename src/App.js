@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Grid from "@mui/material/Grid";
+import MainPage from "./MainPage";
+import NextSection from "./NextSection";
+import WorkSection from "./WorkSection";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div
+			style={{
+				width: "100%",
+				height: "fit-content",
+				display: "flex",
+				justifyContent: "center",
+				alignItems: "center",
+				backgroundColor: "#FFF",
+				overflowX: "hidden",
+			}}
+		>
+			<Grid container spacing={6}>
+				<Grid item md={12}>
+					<MainPage />
+				</Grid>
+				<Grid item md={12}>
+					<NextSection />
+				</Grid>
+				<Grid item md={12}>
+					<WorkSection />
+				</Grid>
+			</Grid>
+		</div>
+	);
 }
 
 export default App;
