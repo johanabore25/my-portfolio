@@ -1,6 +1,6 @@
 .App {
 	text-align: center;
-	background-color: #fce6db;
+	background-color: white;
 }
 
 .body {
@@ -50,5 +50,23 @@
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+.port {
+	animation: color-change 5s infinite ease-in-out;
+}
+
+@keyframes color-change {
+	0% {
+		color: white;
+	}
+	80% {
+		color: #ffe221;
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffe221, 0 0 40px #ffe221, 0 0 50px #ffe221,
+			0 0 60px #ffe221, 0 0 70px #ffe221;
+	}
+	100% {
+		color: orangered;
 	}
 }

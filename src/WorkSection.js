@@ -4,7 +4,7 @@ import { Typography, Grid } from "@mui/material";
 const WorkSection = () => {
 	return (
 		<div style={{ width: "100%", height: "100vh", overflowX: "hidden", padding: "2rem", marginTop: "2rem" }}>
-			<Grid container justifyContent="center" alignItems="center" spacing={4}>
+			<Grid container justifyContent="center" alignItems="center" spacing={4} style={{ height: "100%" }}>
 				<Grid container alignItems="center" justifyContent="space-around" item md={10}>
 					<Grid item md={6}>
 						<img src="/filigree.png" alt="filigree" width="100%" />
@@ -13,7 +13,7 @@ const WorkSection = () => {
 						<Grid item md={12}>
 							<Typography
 								variant="h5"
-								color="#437BAD"
+								color="#1e90ff"
 								style={{ fontFamily: "'Alfa Slab one', 'cursive'" }}
 							>
 								Filigree
@@ -36,7 +36,7 @@ const WorkSection = () => {
 						<Grid item md={12}>
 							<Typography
 								variant="h5"
-								color="#437BAD"
+								color="#1e90ff"
 								style={{ fontFamily: "'Alfa Slab one', 'cursive'" }}
 							>
 								Purenelle (still in development)

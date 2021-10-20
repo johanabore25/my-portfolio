@@ -10,7 +10,7 @@ const NextSection = () => {
 					variant="h2"
 					align="center"
 					style={{ fontFamily: "'Alfa Slab one', 'cursive'" }}
-					color="#437BAD"
+					color="#1e90ff"
 				>
 					Experience
 				</Typography>

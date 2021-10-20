@@ -14,7 +14,7 @@ function App() {
 				display: "flex",
 				justifyContent: "center",
 				alignItems: "center",
-				backgroundColor: "#FFF",
+				backgroundColor: "#FFFff",
 				overflowX: "hidden",
 			}}
 		>

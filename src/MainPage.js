@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography, Avatar } from "@mui/material";
 import { useTrail, animated } from "react-spring";
+import "./App.css";
 
 const Trail = ({ open, children }) => {
 	const items = React.Children.toArray(children);
@@ -24,18 +25,26 @@ const Trail = ({ open, children }) => {
 
 const MainPage = () => {
 	return (
-		<div style={{ width: "100%", padding: "4rem", height: "100vh", position: "relative" }}>
-			<div style={{ position: "absolute", top: "30%", left: "20%" }}>
-				<Avatar src="/me.jpg" alt="me" sx={{ width: "360px", height: "auto" }} />
+		<div
+			style={{
+				width: "100%",
+				padding: "4rem",
+				height: "100vh",
+				position: "relative",
+				backgroundColor: "#1e90ff",
+			}}
+		>
+			<div style={{ position: "absolute", top: "24%", left: "10%" }}>
+				<Avatar src="/me.jpg" alt="me" sx={{ width: "360px", height: "360px" }} />
 			</div>
 			<Trail open={true}>
-				<Grid container justifyContent="center" alignItems="center">
+				<Grid container justifyContent="center" alignItems="center" style={{ height: "80vh" }}>
 					<Grid item md={10} container justifyContent="center" alignItems="center">
-						<Grid item md={10}>
+						<Grid item md={11}>
 							<Typography
 								variant="h1"
-								align="center"
-								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "#4A4242" }}
+								align="right"
+								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "white" }}
 							>
 								Welcome to
 							</Typography>
@@ -44,9 +53,9 @@ const MainPage = () => {
 							<Typography
 								align="right"
 								variant="h1"
-								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "#4A4242" }}
+								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "white" }}
 							>
-								My Portfolio
+								My <span className="port">Portfolio</span>
 							</Typography>
 						</Grid>
 					</Grid>
