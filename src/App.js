@@ -15,10 +15,9 @@ function App() {
 				justifyContent: "center",
 				alignItems: "center",
 				backgroundColor: "#FFFff",
-				overflowX: "hidden",
 			}}
 		>
-			<Grid container spacing={6}>
+			<Grid container spacing={4}>
 				<Grid item md={12}>
 					<MainPage />
 				</Grid>

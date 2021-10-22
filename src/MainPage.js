@@ -28,31 +28,29 @@ const MainPage = () => {
 		<div
 			style={{
 				width: "100%",
-				padding: "4rem",
+				padding: "1rem",
 				height: "100vh",
 				position: "relative",
 				backgroundColor: "#1e90ff",
 			}}
 		>
-			<div style={{ position: "absolute", top: "24%", left: "10%" }}>
-				<Avatar src="/me.jpg" alt="me" sx={{ width: "360px", height: "360px" }} />
-			</div>
 			<Trail open={true}>
-				<Grid container justifyContent="center" alignItems="center" style={{ height: "80vh" }}>
-					<Grid item md={10} container justifyContent="center" alignItems="center">
-						<Grid item md={11}>
+				<Grid container justifyContent="flex-start" alignItems="center" style={{ height: "80vh" }}>
+					<Grid item md={2} sm={12}>
+						<Avatar src="/me.jpg" alt="me" sx={{ width: "50%", height: "auto" }} />
+					</Grid>
+					<Grid item md={10} container justifyContent="flex-start" alignItems="center">
+						<Grid item md={11} sm={12}>
 							<Typography
-								variant="h1"
-								align="right"
+								variant="h3"
 								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "white" }}
 							>
 								Welcome to
 							</Typography>
 						</Grid>
-						<Grid item md={12}>
+						<Grid item md={12} sm={12}>
 							<Typography
-								align="right"
-								variant="h1"
+								variant="h3"
 								style={{ fontFamily: "'Alfa Slab one', 'cursive'", color: "white" }}
 							>
 								My <span className="port">Portfolio</span>
